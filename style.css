@@ -1,0 +1,513 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+body {
+  background-color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  /* filter: blur(1px);
+  -webkit-filter: blur(1px); */
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  font-size: 0.9rem;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3vw 4vw;
+  align-items: center;
+}
+nav .logo img {
+  width: 8vw;
+}
+nav .nav-part-2 {
+  align-items: center;
+  display: flex;
+  gap: 1vw;
+}
+nav .nav-part-2 img {
+  cursor: pointer;
+  display: none;
+  width: 3vw;
+}
+nav .nav-part-2 ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+nav .nav-part-2 ul img {
+  display: none;
+}
+nav .nav-part-2 ul li {
+  font-weight: 500;
+  list-style: none;
+}
+nav .nav-part-2 ul li a {
+  font-size: 1vw;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+nav .nav-part-2 ul li a:hover {
+  color: #31b9f6;
+}
+nav .nav-part-2 ul li button {
+  font-size: 1vw;
+  font-weight: 600;
+  color: #31b9f6;
+  border: 1px solid #31b9f6;
+  cursor: pointer;
+  padding: 0.5vw 2vw;
+  background-color: transparent;
+  border-radius: 40px;
+  transition: all 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+nav .nav-part-2 ul li button:hover {
+  background-color: #31b9f6;
+  color: #fff;
+}
+.main {
+  margin-top: 80px;
+  margin-bottom: 1vw;
+}
+.main .content {
+  gap: 3vw;
+  height: 100%;
+  background-color: #fae4ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vw 25vw;
+}
+.main .content p {
+  font-size: 1.4vw;
+  font-weight: 700;
+  text-align: center;
+}
+.main .content .hero {
+  gap: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .content .hero h1 {
+  font-weight: 800;
+  font-size: 3vw;
+}
+.main .content .hero img {
+  width: 26vw;
+}
+.main section {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 1vw 7vw;
+  background-color: #fff;
+}
+.main section .section1 {
+  padding: 2vw 1vw;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.main section .section1 .card {
+  border-radius: 6px;
+  /* border: 1px solid #6666; */
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+  gap: 0.5em;
+  width: 25vw;
+}
+.main section .section1 .card h1 {
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+.main section .section1 .card h1:hover {
+  color: #31b9f6;
+}
+.main section .section1 .card p {
+  font-size: 1vw;
+  color: #666;
+}
+.main section .section1 .card img {
+  width: 100%;
+}
+.main section .section2 {
+  padding: 0vw 9vw;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.main section .section2 .text {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+.main section .section2 .text h2 {
+  font-weight: 400;
+  font-size: 1.3vw;
+  color: #6669;
+}
+.main section .section2 .text h1 {
+  font-family: "Parkinsans", sans-serif;
+  font-weight: 600;
+  font-size: 2.4vw;
+}
+.main section .section2 .text p {
+  font-size: 1vw;
+  color: #666;
+}
+.main section .section2 .text .btn {
+  display: flex;
+  gap: 2vw;
+}
+.main section .section2 .text button {
+  font-size: 1vw;
+  font-weight: 600;
+  color: #31b9f6;
+  border: 1px solid #31b9f6;
+  cursor: pointer;
+  padding: 0.5vw 3vw;
+  background-color: transparent;
+  border-radius: 40px;
+  transition: all 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+.main section .section2 .text button:hover {
+  background-color: #31b9f6;
+  color: #fff;
+}
+.main section .section2 .text .btn p {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.main section .section2 .text .btn p img {
+  width: 1.5vw;
+  color: #000;
+}
+.main section .section2 img {
+  width: 30vw;
+}
+.main section .section3 {
+  color: #fff;
+  border-radius: 40px;
+  overflow: hidden;
+  z-index: 10;
+  margin: 0vw 7vw;
+  background-color: #042449;
+  display: flex;
+  padding: 5vw;
+}
+.main section .section3 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.main section .section3 .text h1 {
+  font-size: 2vw;
+}
+.main section .section3 .text p {
+  font-size: 1.2vw;
+  gap: #6666;
+}
+.main section .section3 .text .btn {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.main section .section3 .text .btn button {
+  font-size: 1vw;
+  font-weight: 600;
+  color: #31b9f6;
+  border: 1px solid #31b9f6;
+  cursor: pointer;
+  padding: 0.5vw 3vw;
+  background-color: transparent;
+  border-radius: 40px;
+  transition: all 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+.main section .section3 .text .btn button:hover {
+  background-color: #31b9f6;
+  color: #fff;
+}
+.main section .section3 .text .btn a {
+  font-size: 1vw;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+}
+.main section .section3 .text .btn a:hover {
+  color: #31b9f6;
+  text-decoration: underline;
+}
+.main section .section3 .Section3Img {
+  position: relative;
+  width: 50%;
+}
+.main section .section3 img {
+  z-index: 7;
+  top: -70px;
+  right: -80px;
+  position: absolute;
+  width: 100%;
+}
+footer {
+  padding: 2vw 4vw;
+}
+footer .top {
+  padding: 1vw 0vw;
+  display: flex;
+  gap: 2vw;
+}
+footer .top .logo img {
+  width: 10vw;
+}
+footer .top .text {
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+footer .top .text ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .top .text ul p {
+  font-size: 1.3vw;
+}
+footer .top .text ul li {
+  line-height: 1.9vw;
+  list-style: none;
+}
+footer .top .text ul li a {
+  cursor: pointer;
+  font-size: 0.9vw;
+}
+footer .top .text ul li a:hover {
+  color: #1a6283;
+  text-decoration: underline;
+}
+footer .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+footer .bottom .icon {
+  display: flex;
+  gap: 0.6em;
+}
+footer .bottom .icon img {
+  cursor: pointer;
+  width: 1.4vw;
+}
+footer .bottom .text {
+  justify-content: space-between;
+  display: flex;
+  gap: 1vw;
+}
+footer .bottom .text p {
+  font-size: 0.9vw;
+}
+footer .bottom .text .field {
+  display: flex;
+  gap: 1em;
+}
+footer .bottom .text .field a {
+  font-size: 0.8vw;
+  cursor: pointer;
+}
+footer .bottom .text .field a:hover {
+  color: #31b9f6;
+}
+footer .bottom .border {
+  border: 0.4px solid #6666;
+}
+
+@media (max-width: 825px) {
+  .main section .section3 .text {
+    width: 100%;
+  }
+}
+@media (max-width: 648px) {
+  .main {
+    margin-top: 30px;
+  }
+  nav {
+    height: 30px;
+  }
+
+  nav .nav-part-2 ul {
+    transition: all 0.7s;
+    padding-top: 20%;
+    z-index: 9999;
+    width: 100%;
+    background-color: #fff2f2;
+    right: 0px;
+    top: 6px;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    height: 100vh;
+  }
+  nav .nav-part-2 ul img {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    width: 6vw;
+    right: 20px;
+    display: block;
+  }
+  nav .nav-part-2 ul li a {
+    font-size: 3.5vw;
+  }
+  nav .nav-part-2 ul li button {
+    font-size: 3.5vw;
+  }
+  nav .nav-part-2 img {
+    display: block;
+  }
+
+  .main .content {
+    padding: 4vw 15vw;
+  }
+  .main .content .hero img {
+    width: 33vw;
+  }
+
+  .main section .section3 {
+    border-radius: 15px;
+    padding: 3vh;
+    margin: 0vw 1vw;
+  }
+}
+@media (max-width: 425px) {
+  nav {
+    height: 35px;
+  }
+  nav .logo img {
+    width: 17vw;
+  }
+  nav .nav-part-2 img {
+    width: 5vw;
+  }
+  .main section {
+    padding: 3vw 2vw;
+  }
+  .main .content {
+    padding: 4vw 8vw;
+  }
+  .main .content .hero {
+    gap: 1vw;
+    flex-direction: column;
+  }
+  .main .content .hero img {
+    width: 40vw;
+  }
+  .main .content p {
+    font-size: 3vw;
+  }
+  .main section .section1 .card h1 {
+    font-size: 3.5vw;
+  }
+  .main section .section1 .card p {
+    font-size: 2.6vw;
+  }
+  .main section .section1 {
+    padding: 0vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main section .section1 .card {
+    width: 60%;
+  }
+  .main section .section2 {
+    padding: 0vw;
+    flex-direction: column-reverse;
+  }
+  .main section .section2 .text {
+    width: 70%;
+  }
+  .main section .section2 .text h1 {
+    font-size: 3.7vw;
+  }
+  .main section .section2 .text h2 {
+    font-size: 2.7vw;
+  }
+  .main section .section2 .text p {
+    font-size: 2.5vw;
+  }
+  .main section .section2 .text button {
+    font-size: 2.5vw;
+  }
+  .main section .section2 img {
+    width: 100%;
+  }
+  .main section .section3 .text h1 {
+    font-size: 3.7vw;
+  }
+  .main section .section3 .text p {
+    font-size: 2.5vw;
+  }
+  .main section .section3 .text .btn {
+    gap: 4vw;
+  }
+  .main section .section3 .text .btn button {
+    font-size: 2.5vw;
+  }
+  .main section .section3 .text .btn a {
+    font-size: 2.5vw;
+  }
+  footer .top .logo img {
+    width: 17vw;
+  }
+  footer .top {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .top .text ul p {
+    font-size: 2.7vw;
+  }
+  footer .top .text ul li {
+    line-height: 3vw;
+  }
+  footer .top .text ul li a {
+    font-size: 2vw;
+  }
+  footer .bottom .border {
+    border: none;
+  }
+  footer .bottom .icon {
+    justify-content: center;
+  }
+  footer .bottom .text {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .bottom .icon img {
+    width: 3.4vw;
+  }
+  footer .bottom .text p {
+    text-align: center;
+    font-size: 2vw;
+  }
+  footer .bottom .text .field a {
+    font-size: 1.8vw;
+  }
+}
